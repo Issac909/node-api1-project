@@ -1,6 +1,7 @@
 //NODE JS and EXPRESS
 const express = require("express");
 const shortid = require("shortid");
+const cors = require('cors');
 
 const server = express();
 const PORT = 5000;
@@ -8,6 +9,7 @@ const PORT = 5000;
 let users = []
 
 server.use(express.json());
+server.use(cors());
 
 server.get("/hello", (req, res) => {
   res.status(201).json({ hello: "Jason" });

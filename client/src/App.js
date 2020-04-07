@@ -8,7 +8,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Route exact path = '/users' component = {UserCards} />
+      <h1>Hello</h1>
+      <UserCards />
     </div>
   );
 }

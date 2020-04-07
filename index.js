@@ -6,7 +6,7 @@ const cors = require("cors");
 const server = express();
 const PORT = 5000;
 
-let users = [];
+let users = []
 
 server.use(express.json());
 server.use(cors());
